@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    username: postgres
+    url: jdbc:postgresql://localhost:5432/CortiliaBE
+    hikari:
+      schema: cortilia
+    password: Napoli20
+  jpa:
+    hibernate:
+      ddl-auto: update
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+
+
+jwt.expirationMs: '86400000'
+jwt.secret: SecretKey
